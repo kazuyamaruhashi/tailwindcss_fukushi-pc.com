@@ -1,0 +1,260 @@
+@use "mixin" as *;
+@use "destyle";
+
+.sm {
+  color: #64c1b8;
+
+  @include mq(sm) {
+    color: #e4007f;
+  }
+
+  @include mq(md) {
+    color: #0035e4;
+  }
+
+  @include mq(lg) {
+    color: #e4ba00;
+  }
+}
+
+:root {
+  --root-font-size: $baseFontSize;
+  --color-main: #f8f2ef;
+  --color-accentA: #64c1b8;
+  --color-accentB: #e4007f;
+  --color-text: #444;
+  --color-bg: #f5f5f5;
+  font-family: "游ゴシック体" , YuGothic ,
+  "Noto Sans JP" , "Zen Maru Gothic", sans-serif;
+  line-height: 2.2;
+  letter-spacing: 0.16rem;
+  text-align: justify;
+  font-feature-settings: "palt";
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: rem(16);
+  color: var(--text-color);
+}
+
+header {
+  .logo {
+    width: 30%;
+    margin: 0 auto 2rem auto;
+  }
+
+  nav {
+    ul {
+      li {
+        height: 80px;
+
+        .gNaviJp {
+          font-size: rem(16);
+        }
+
+        .gNaviEn {
+          font-size: rem(12);
+        }
+      }
+    }
+  }
+
+  .headerSP {
+    @include mq(md) {
+      display: none;
+    }
+
+    .logo {
+      position: relative;
+      width: 40%;
+      margin: 0 0 2rem 0;
+    }
+  }
+}
+
+.copyright {
+  width: 100vw;
+  background-color: var(--color-accentA);
+  font-size: rem(10);
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.08rem;
+  padding: 8px;
+}
+
+
+
+
+button {
+  display: block;
+  border: 1px solid var(--color-accentA);
+  color: var(--color-accentA);
+  // margin-top: 4rem;
+  padding: 1rem 3rem;
+  font-size: rem(13);
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 1;
+  @include del-space(1);
+}
+
+.bg_rellax {
+  background-image: url(/images/bg_ptrn.png);
+}
+
+.bg_rellax--right {
+  position: absolute;
+  top: 24%;
+  left: inherit;
+  left: auto;
+  right: 0;
+  width: 64%;
+  height: 52%;
+  z-index: -1;
+}
+
+.company {
+  .inner {
+    gap: 2rem;
+    flex-direction: column;
+
+    @include mq(md) {
+      gap: 6rem;
+      flex-direction: row;
+    }
+  }
+
+  .company__map {
+    position: relative;
+    width: 100%;
+
+    iframe {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      z-index: -1;
+
+      @include mq(md) {
+        height: 596px;
+      }
+    }
+  }
+
+  .company__info {
+    width: 100%;
+
+    @include mq(md) {
+      height: 55%;
+    }
+
+    .logo {
+      width: 16rem;
+      height: auto;
+      margin-bottom: 4rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@include mq(sm) {
+}
+
+@include mq(md) {
+}
+
+@include mq(lg) {
+}
+
+// line-height: 1;
+// @include del-space(1);
+// font-size: rem(10);
+
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeUpTrigger {
+  opacity: 0;
+}
+
+// .blogPrev {
+// position: absolute;
+// bottom: 0;
+// z-index: 100;
+// }
+// .blogNext {
+// position: absolute;
+//   bottom: 0;
+//   z-index: 100;
+// }
+
+.slick-arrow {
+  position: absolute;
+  top: calc(100% + 64px);
+  left: 0;
+  z-index: 1;
+  width: 48px;
+  height: 48px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 0;
+  overflow: hidden;
+}
+.slick-arrow::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  top: 50%;
+  left: 50%;
+}
+.blogPrev::before {
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+.blogNext::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.blogNext {
+left: 58px;
+}
+
+.sliderInsta,
+.sliderA,
+.sliderB,
+.sliderBlog {
+  opacity: 0;
+  transition: opacity .3s linear;
+}
+
+.sliderInsta.slick-initialized,
+.sliderInsta.slick-initialized,
+.sliderA.slick-initialized,
+.sliderB.slick-initialized,
+.sliderBlog.slick-initialized {
+  opacity: 1;
+}

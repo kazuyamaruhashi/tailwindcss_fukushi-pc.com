@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Tailwind Starter Template</title>
+  <meta name="description" content="Simple landind page" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <!--Replace with your tailwind.css once created-->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,400,700" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- gradient-->
+  <style>
+    .gradient {
+      background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    }
+  </style>
+</head>
+<body class="font-thin text-sm md:text-base w-full overflow-x-hidden text-justify tracking-widest leading-loose">
+
+  <!-- メインビジュアル -->
+  <section class="hero relative pt-40 mb-24">
+    <div class="rellax">
+      <picture>
+        <source media="(min-width:1024px)" srcset="https://placekitten.com/1920/960">
+        <source media="(max-width:1023px)" srcset="https://placekitten.com/750/900">
+        <img class="w-full" src="https://placekitten.com/750/900" alt="メインビジュアル">
+      </picture>
+    </div>
+  </section>
+
+  <!-- ニュース -->
+  <section class="news relative w-11/12 sm:w-9/12 z-10 bg-white -mt-32 mb-8 mx-auto pt-8 px-8">
+    <h2 class="-mt-16 mb-4 text-4xl">News</h2>
+    <ul>
+      <li class="border-b-gray-900 border-b mb-6 pb-6 tracking-widest text-justify leading-relaxed">
+        <span class="block text-gray-800 font-thin">2020.10.14 - Wed</span>
+        詳細ページのある新着情報のテスト
+      </li>
+      <li class="border-b-gray-900 border-b mb-6 pb-6 tracking-widest text-justify leading-relaxed">
+        <span class="block text-gray-800 font-thin">2020.10.14 - Wed</span>
+        ホームページを公開しました。
+      </li>
+    </ul>
+  </section>
+
+  <!-- Instagram -->
+  <section class="instagram w-full px-6 py-8">
+    <div class="instagram__inner">
+      <h2 class="text-xl text-center leading-relaxed mb-8">Instagram</h2>
+      <ul class="sliderInsta flex">
+        <li>
+          <div class="box w-32 h-32"><img src="https://placekitten.com/128/128" alt="インスタ画像"></div>
+        </li>
+        <li>
+          <div class="box w-32 h-32"><img src="https://placekitten.com/256/256" alt="インスタ画像"></div>
+        </li>
+        <li>
+          <div class="box w-32 h-32"><img src="https://placekitten.com/512/512" alt="インスタ画像"></div>
+        </li>
+        <li>
+          <div class="box w-32 h-32"><img src="https://placekitten.com/128/128" alt="インスタ画像"></div>
+        </li>
+        <li>
+          <div class="box w-32 h-32"><img src="https://placekitten.com/256/256" alt="インスタ画像"></div>
+        </li>
+        <li>
+          <div class="box w-32 h-32"><img src="https://placekitten.com/512/512" alt="インスタ画像"></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 左右レイアウト01 -->
+  <section class="column max-w-5xl mx-auto py-24">
+    <div class="flex flex-wrap flex-col-reverse md:flex-row-reverse">
+      <div class="w-full md:w-1/2 p-6">
+        <h3 class="text-xl sm:text-3xl leading-loose sm:leading-loose tracking-widest text-center sm:text-left font-bold mb-8">
+        左右レイアウト01の<br />
+        コンテンツタイトル
+        </h3>
+        <p class="tracking-widest text-justify leading-loose mb-4">
+            この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+        <p class="tracking-widest text-justify leading-loose">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。
+          </p>
+        <div class="mt-8">
+          <div class="btn btn-sm">
+            <div class="mx-20 sm:mx-0 sm:w-2/3 block border text-center mb-16 py-2"><span>MORE</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 p-6">
+        <picture>
+          <source media="(min-width:768px)" srcset="https://placekitten.com/1152/1112">
+          <source media="(max-width:767.8px)" srcset="https://placekitten.com/576/556">
+          <img src="https://placekitten.com/576/556" alt="左右レイアウト画像">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- 左右レイアウト02 -->
+  <!-- <section class="column flex flex-wrap flex-row sm:flex-row py-24">
+    <div class="w-full sm:w-1/2 p-6">
+      <picture>
+        <source media="(min-width:1024px)" srcset="https://placekitten.com/1152/1112">
+        <source media="(max-width:1023px)" srcset="https://placekitten.com/576/556">
+        <img src="https://placekitten.com/576/556" alt="左右レイアウト画像">
+      </picture>
+    </div>
+    <div class="w-full sm:w-1/2 p-6">
+      <div class="">
+        <h3 class="text-xl text-center sm:text-left font-bold leading-relaxed mb-8">
+                左右レイアウト02の<br>
+                コンテンツタイトル
+              </h3>
+        <p class="tracking-widest text-justify leading-loose mb-4">
+                      この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+        <p class="tracking-widest text-justify leading-loose">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。
+                    </p>
+        <div class="mt-8">
+          <div class="btn btn-sm">
+            <div class="mx-20 block border text-center mb-16 py-2"><span>MORE</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- 上下レイアウト -->
+  <!-- <section class="column flex flex-wrap flex-row sm:flex-row py-24">
+    <div class="w-full p-6">
+      <picture>
+        <source media="(min-width:561px)" srcset="https://placekitten.com/1064/358">
+        <source media="(max-width:560px)" srcset="https://placekitten.com/750/383">
+        <img class="max-w-full" src="https://placekitten.com/750/383" alt="上下レイアウト画像">
+      </picture>
+    </div>
+    <div class="w-full p-6">
+      <div class="md:w-8/12 m-auto">
+        <h3 class="text-xl md:text-4xl leading-relaxed md:leading-relaxed text-center font-bold mb-8">
+            上下レイアウトの<br>
+            コンテンツタイトル
+          </h3>
+        <p class="mb-4">
+            この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+        <p class="">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。
+          </p>
+        <div class="mt-8">
+          <div class="btn btn-sm">
+            <div class="mx-20 block border text-center mb-16 py-2"><span>MORE</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- 背景画像レイアウト -->
+  <!-- <section class="column flex flex-wrap flex-row sm:flex-row">
+    <div class="w-full">
+      <picture>
+        <source media="(min-width:561px)" srcset="https://placekitten.com/1920/828">
+        <source media="(max-width:560px)" srcset="https://placekitten.com/750/438">
+        <img class="max-w-full" src="https://placekitten.com/1920/828" alt="背景画像レイアウト">
+      </picture>
+    </div>
+    <div class="w-full p-6">
+      <div class="w-11/12 bg-white -mt-12 mx-auto px-4 pt-6">
+        <h3 class="text-xl md:text-4xl leading-relaxed md:leading-relaxed font-bold mb-8">
+            背景画像レイアウトの<br>
+            コンテンツタイトル
+          </h3>
+        <p class="mb-4">
+            この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+        <p class="">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。
+          </p>
+        <div class="mt-8">
+          <div class="btn btn-sm">
+            <div class="mx-20 block border text-center mb-16 py-2"><span>MORE</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- カラムレイアウト大 -->
+  <!-- <section class="column max-w-full mx-4 my-24">
+    <div>
+      <h2 class="mb-6 md:mb-16">
+  <span class="text-sm block mb-4 text-center">COLUMN LAYOUT LARGE</span>
+  <span class="text-2xl block text-center">カラムレイアウト大サイズ</span>
+  </h2>
+      <ul class="flex flex-col gap-x-6">
+        <li class="mb-8">
+          <div class="imgarea mb-8 sm:mx-auto block">
+            <picture>
+              <source media="(min-width:1024px)" srcset="https://placekitten.com/600/450">
+              <source media="(max-width:1023px)" srcset="https://placekitten.com/600/450">
+              <img src="https://placekitten.com/600/450">
+            </picture>
+          </div>
+          <div class="txtarea">
+            <h4 class="text-center">カラムレイアウトサブタイトル</h4>
+            <h3 class="text-center text-lg mb-4">カラムレイアウトタイトル</h3>
+            <p class="tracking-widest leading-loose">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+          </div>
+        </li>
+        <li class="mb-8">
+          <div class="imgarea mb-8 sm:mx-auto block">
+            <picture>
+              <source media="(min-width:1024px)" srcset="https://placekitten.com/600/450">
+              <source media="(max-width:1023px)" srcset="https://placekitten.com/600/450">
+              <img src="https://placekitten.com/600/450">
+            </picture>
+          </div>
+          <div class="txtarea">
+            <h4 class="text-center">カラムレイアウトサブタイトル</h4>
+            <h3 class="text-center text-lg mb-4">カラムレイアウトタイトル</h3>
+            <p class="tracking-widest leading-loose">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+          </div>
+        </li>
+        <li class="mb-8">
+          <div class="imgarea mb-8 sm:mx-auto block">
+            <picture>
+              <source media="(min-width:1024px)" srcset="https://placekitten.com/600/450">
+              <source media="(max-width:1023px)" srcset="https://placekitten.com/600/450">
+              <img src="https://placekitten.com/600/450">
+            </picture>
+          </div>
+          <div class="txtarea">
+            <h4 class="text-center">カラムレイアウトサブタイトル</h4>
+            <h3 class="text-center text-lg mb-4">カラムレイアウトタイトル</h3>
+            <p class="tracking-widest leading-loose">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+          </div>
+          <div class="mt-4">
+            <div class="btn btn-sm">
+              <div class="mx-20 block border text-center mb-16 py-2"><span>MORE</span></div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section> -->
+
+  <!-- カラムレイアウト中 -->
+  <!-- <section class="column max-w-full mx-4 my-24">
+    <div>
+      <h2>
+      <span class="text-sm md:text-base block mb-4 text-center">COLUMN LAYOUT MEDIUM</span>
+      <span class="text-2xl md:text-5xl block mb-8 text-center">カラムレイアウト中サイズ</span>
+    </h2>
+      <ul class="flex flex-col md:flex-row lg:justify-around gap-6 max-w-full mx-auto">
+        <li>
+          <div class="imgarea mb-4">
+            <img class="mx-auto" src="https://placekitten.com/410/300">
+          </div>
+          <div>
+            <h4 class="block text-center mb-1">カラムレイアウトサブタイトル</h4>
+            <h3 class="block text-center text-lg mb-2">カラムレイアウトタイトル</h3>
+            <div class="mt-4">
+              <div class="btn btn-sm">
+                <div class="block sm:w-1/2 sm:mx-auto md:w-full border text-center mb-8 py-1.5">
+                  <a href=""><span>MORE</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="imgarea mb-4">
+            <img class="mx-auto" src="https://placekitten.com/410/300">
+          </div>
+          <div>
+            <h4 class="block text-center mb-1">カラムレイアウトサブタイトル</h4>
+            <h3 class="block text-center text-lg mb-2">カラムレイアウトタイトル</h3>
+            <div class="mt-4">
+              <div class="btn btn-sm">
+                <div class="block sm:w-1/2 sm:mx-auto md:w-full border text-center mb-8 py-1.5">
+                  <a href=""><span>MORE</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="imgarea mb-4">
+            <img class="mx-auto" src="https://placekitten.com/410/300">
+          </div>
+          <div>
+            <h4 class="block text-center mb-1">カラムレイアウトサブタイトル</h4>
+            <h3 class="block text-center text-lg mb-2">カラムレイアウトタイトル</h3>
+            <div class="mt-4">
+              <div class="btn btn-sm">
+                <div class="block sm:w-1/2 sm:mx-auto md:w-full border text-center mb-8 py-1.5">
+                  <a href=""><span>MORE</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section> -->
+
+  <!-- カラムレイアウト小 -->
+  <!-- <section class="column max-w-full mx-4">
+    <div class="">
+      <h2 class="">
+    <span class="text-sm block mb-4 text-center">COLUMN LAYOUT SMALL</span>
+    <span class="text-2xl md:text-5xl block text-center">カラムレイアウト小サイズ</span>
+          </h2>
+      <ul class="grid grid-cols-2 gap-6 mt-16">
+        <li class="">
+          <div class="imgarea mb-8 btm24">
+            <img src="https://placekitten.com/410/300">
+          </div>
+          <div class="txtarea">
+            <h4 class="text-center text-xs mb-1">カラムレイアウトサブ</h4>
+            <h3 class="text-center text-base mb-2">カラムレイアウト</h3>
+            <p class="tracking-widest text-justify leading-relaxed">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+          </div>
+        </li>
+        <li class="">
+          <div class="imgarea mb-8 btm24">
+            <img src="https://placekitten.com/410/300">
+          </div>
+          <div class="txtarea">
+            <h4 class="text-center text-xs mb-1">カラムレイアウトサブ</h4>
+            <h3 class="text-center text-base mb-2">カラムレイアウト</h3>
+            <p class="tracking-widest text-justify leading-relaxed">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </section> -->
+
+  <!-- スライダータイプA -->
+  <!-- <section class="slider max-w-full mx-4 py-24">
+    <div class=" inner inner-sm sect_pdg">
+      <h2 class="sect_ttl btm40 fade_in">
+            <span class="sect_ttl-en block">SLIDER TYPE A</span>
+            <span class="text-2xl">要素スライダー<br>タイプAのレイアウト</span>
+          </h2>
+      <div class="sliderA">
+        <div class="sliderA01">
+          <div class="imgarea">
+            <picture>
+              <source media="(min-width:1024px)" srcset="https://placekitten.com/540/600">
+              <source media="(max-width:1023px)" srcset="https://placekitten.com/540/600">
+              <img src="https://placekitten.com/540/600" alt="スライダー画像説明">
+            </picture>
+          </div>
+          <div class="txtarea">
+            <h4 class="">要素スライダーサブタイトル01</h4>
+            <h4 class="">要素スライダータイトル01</h4>
+            <div class="">
+              <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+              <p>この文章はダミーです。<br>文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+            </div>
+            <div class="mt-8">
+              <div class="btn btn-sm">
+                <div class="mx-20 block border text-center mb-16 py-2"><span>MORE</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sliderA02">
+          <div class="imgarea">
+            <picture>
+              <source media="(min-width:1024px)" srcset="https://placekitten.com/540/600">
+              <source media="(max-width:1023px)" srcset="https://placekitten.com/540/600">
+              <img src="https://placekitten.com/540/600" alt="スライダー画像説明" class="">
+            </picture>
+          </div>
+          <div class="txtarea">
+            <h4 class="">要素スライダーサブタイトル02</h4>
+            <h4 class="">要素スライダータイトル02</h4>
+            <div class="">
+              <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+              <p>この文章はダミーです。<br>文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+            </div>
+            <div class="btn_list">
+              <div class="btn">
+                <a href="#" class="btn--in por poa-af bg_clr-main-af fnt-en flx flx-ctr-a flx-ctr-j clr-main bdr_clr-main" tabindex="-1"><span>VIEW MORE</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sliderA03">
+          <div class="imgarea">
+            <picture>
+              <source media="(min-width:1024px)" srcset="https://placekitten.com/540/600">
+              <source media="(max-width:1023px)" srcset="https://placekitten.com/540/600">
+              <img src="https://placekitten.com/540/600" alt="スライダー画像説明" class="">
+            </picture>
+          </div>
+          <div class="txtarea">
+            <h4 class="">要素スライダーサブタイトル03</h4>
+            <h4 class="">要素スライダータイトル03</h4>
+            <div class="">
+              <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+              <p>この文章はダミーです。<br>文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+            </div>
+            <div class="btn_list">
+              <div class="btn">
+                <a href="#" class="btn--in por poa-af bg_clr-main-af fnt-en flx flx-ctr-a flx-ctr-j clr-main bdr_clr-main" tabindex="-1"><span>VIEW MORE</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- スライダータイプB -->
+  <!-- <section class="slider max-w-full py-24">
+    <div class="">
+      <h2 class="mb-8">
+          <span class="block mb-4">SLIDER TYPE B</span>
+          <span class="text-2xl">要素スライダー<br>タイプBのレイアウト</span>
+        </h2>
+      <div class="sliderB">
+        <div class="sliderB01">
+          <div class="imgarea">
+            <picture>
+              <source media="(min-width:1024px)" srcset="https://placekitten.com/1380/920">
+              <source media="(max-width:1023px)" srcset="https://placekitten.com/690/460">
+              <img class="max-w-full" src="https://placekitten.com/690/460" alt="スライダー画像説明" class="">
+            </picture>
+          </div>
+          <div class="txtarea bg-gray-100 -mt-4 mx-4 p-8 tracking-widest">
+            <div class="text-right text-6xl -mt-16 mb-4">01</div>
+            <h4 class="text-base mb-2 tracking-widest">要素スライダーサブタイトル01</h4>
+            <h4 class="text-lg mb-6">要素スライダータイトル01</h4>
+            <div class="mb-8">
+              <p class="mb-4">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+              <p>この文章はダミーです。<br>文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+            </div>
+            <div class="mt-4">
+              <div class="btn btn-sm">
+                <div class="block border text-center py-3">
+                  <a href="/">VIEW MORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="imgarea">
+          <picture>
+            <source media="(min-width:1024px)" srcset="https://placekitten.com/1380/920">
+            <source media="(max-width:1023px)" srcset="https://placekitten.com/690/460">
+            <img class="max-w-full" src="https://placekitten.com/690/460" alt="スライダー画像説明" class="">
+          </picture>
+        </div>
+        <div class="txtarea">
+          <div class="">02</div>
+          <h4 class="">要素スライダーサブタイトル02</h4>
+          <h4 class="">要素スライダータイトル02</h4>
+          <div class="">
+            <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+            <p>この文章はダミーです。<br>文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+          </div>
+          <div class="btn_list">
+            <div class="btn">
+              <a href="#" class="btn--in por poa-af bg_clr-main-af fnt-en flx flx-ctr-a flx-ctr-j clr-main bdr_clr-main" tabindex="-1"><span>VIEW MORE</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ブログ -->
+  <!-- <section class="blog w-full">
+      <div class="mx-8">
+        <h2>
+        <span class="block mb-4">BLOG</span>
+        <span class="block mb-8 text-2xl">ブログ</span>
+        </h2>
+        <div class="sliderBlog relative">
+          <article class="text-justify tracking-widest leading-loose">
+            <div class="imgarea mb-6">
+              <img src="https://placekitten.com/950/520" alt="">
+            </div>
+            <div class="txtarea w-full flex justify-between items-center mb-2">
+              <p class="text-sm">2022.08.04 - Thu</p>
+              <p class="bg-gray-100 text-xs px-4 py-1"><a href="">その他</a></p>
+            </div>
+            <h3 class="text-base font-bold leading-loose">
+              <a href="">ブログタイトル01</a></h3>
+            <p class="text-sm text-justify tracking-widest leading-loose">
+              この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+            </p>
+            <button class=""><a href="">VIEW MORE</a></button>
+          </article>
+          <article class="text-justify tracking-widest leading-loose">
+            <div class="imgarea mb-6">
+              <img src="https://placekitten.com/950/520" alt="">
+            </div>
+            <div class="txtarea w-full flex justify-between items-center mb-2">
+              <p class="text-sm">2022.08.04 - Thu</p>
+              <p class="bg-gray-100 text-xs px-4 py-1"><a href="">その他</a></p>
+            </div>
+            <h3 class="text-base font-bold leading-loose">
+              <a href="">ブログタイトル02</a></h3>
+            <p class="text-sm text-justify tracking-widest leading-loose">
+              この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+            </p>
+            <button class=""><a href="">VIEW MORE</a></button>
+          </article>
+        </div>
+      </div>
+    </section> -->
+
+  <!--Footer-->
+  <!-- <footer class="bg-white">
+    <div class="container mx-auto px-8">
+      <div class="w-full flex flex-col md:flex-row py-6">
+        <div class="flex-1 mb-6 text-black">
+          <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+            <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
+              <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" />
+              <path class="plane-take-off" d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z " />
+            </svg>
+            LANDING
+          </a>
+        </div>
+        <div class="flex-1">
+          <p class="uppercase text-gray-500 md:mb-6">Links</p>
+          <ul class="list-reset mb-6">
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">FAQ</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Help</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Support</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex-1">
+          <p class="uppercase text-gray-500 md:mb-6">Legal</p>
+          <ul class="list-reset mb-6">
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Terms</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Privacy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex-1">
+          <p class="uppercase text-gray-500 md:mb-6">Social</p>
+          <ul class="list-reset mb-6">
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Facebook</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Linkedin</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Twitter</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex-1">
+          <p class="uppercase text-gray-500 md:mb-6">Company</p>
+          <ul class="list-reset mb-6">
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Official Blog</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">About Us</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    var scrollpos = window.scrollY;
+    var header = document.getElementById("header");
+    var navcontent = document.getElementById("nav-content");
+    var navaction = document.getElementById("navAction");
+    var brandname = document.getElementById("brandname");
+    var toToggle = document.querySelectorAll(".toggleColour");
+
+    document.addEventListener("scroll", function () {
+      /*Apply classes for slide in bar*/
+      scrollpos = window.scrollY;
+
+      if (scrollpos > 10) {
+        header.classList.add("bg-white");
+        navaction.classList.remove("bg-white");
+        navaction.classList.add("gradient");
+        navaction.classList.remove("text-gray-800");
+        navaction.classList.add("text-white");
+        //Use to switch toggleColour colours
+        for (var i = 0; i < toToggle.length; i++) {
+          toToggle[i].classList.add("text-gray-800");
+          toToggle[i].classList.remove("text-white");
+        }
+        header.classList.add("shadow");
+        navcontent.classList.remove("bg-gray-100");
+        navcontent.classList.add("bg-white");
+      } else {
+        header.classList.remove("bg-white");
+        navaction.classList.remove("gradient");
+        navaction.classList.add("bg-white");
+        navaction.classList.remove("text-white");
+        navaction.classList.add("text-gray-800");
+        //Use to switch toggleColour colours
+        for (var i = 0; i < toToggle.length; i++) {
+          toToggle[i].classList.add("text-white");
+          toToggle[i].classList.remove("text-gray-800");
+        }
+
+        header.classList.remove("shadow");
+        navcontent.classList.remove("bg-white");
+        navcontent.classList.add("bg-gray-100");
+      }
+    });
+  </script>
+  <script>
+
+    var navMenuDiv = document.getElementById("nav-content");
+    var navMenu = document.getElementById("nav-toggle");
+
+    document.onclick = check;
+    function check(e) {
+      var target = (e && e.target) || (event && event.srcElement);
+
+      //Nav Menu
+      if (!checkParent(target, navMenuDiv)) {
+        // click NOT on the menu
+        if (checkParent(target, navMenu)) {
+          // click on the link
+          if (navMenuDiv.classList.contains("hidden")) {
+            navMenuDiv.classList.remove("hidden");
+          } else {
+            navMenuDiv.classList.add("hidden");
+          }
+        } else {
+          // click both outside link and outside menu, hide menu
+          navMenuDiv.classList.add("hidden");
+        }
+      }
+    }
+    function checkParent(t, elm) {
+      while (t.parentNode) {
+        if (t == elm) {
+          return true;
+        }
+        t = t.parentNode;
+      }
+      return false;
+    }
+  </script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.sliderInsta').slick({
+        autoplay: true,
+        speed: 300,
+        arrows: true,
+        slidesToShow: 3,
+        slidesToShow: 2,
+        centerMode: true,
+
+        // responsive: [
+        //   {
+        //     breakpoint: 640,
+        //     settings: {
+        //       slidesToShow: 6,
+        //       centerMode: true,
+        //       centerPadding: '100px'
+        //     }
+        //   }
+        // ],
+        prevArrow: '<button type=”button” class=”slick-prev”></button>',
+        nextArrow: '<button type=”button” class=”slick-next”></button>'
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.sliderA').slick({
+        autoplay: true,
+        adaptiveHeight: true,
+        fade: true,
+        arrows: true,
+        prevArrow: '<div class="prev">PREV</div>',
+        nextArrow: '<div class="next">NEXT</div>'
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.sliderB').slick({
+        autoplay: true,
+        adaptiveHeight: true,
+        fade: true,
+        arrows: true,
+        prevArrow: '<div class="prev">PREV</div>',
+        nextArrow: '<div class="next">NEXT</div>'
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.sliderBlog').slick({
+        autoplay: true,
+        adaptiveHeight: true,
+        fade: true,
+        arrows: true,
+        // slidesToShow: 3,
+        prevArrow: '<div class="blogPrev"></div>',
+        nextArrow: '<div class="blogNext"></div>'
+      });
+    });
+  </script>
+
+</body>
+<script src="./node_modules/preline/dist/preline.js"></script>
+</html>
